@@ -1,0 +1,300 @@
+@font-face {
+    font-family: fjallaone;
+    src: url(./fonts/FjallaOne-Regular.ttf)
+  }
+
+  @font-face {
+    font-family: nevis;
+    src: url(./fonts/nevis.ttf);
+    font-style: normal;
+    font-weight: normal;
+    
+  }
+
+  @font-face {
+    font-family: simbols;
+    src: url(./sibols/WebSymbols-Regular.otf);
+    font-style: normal;
+    font-weight: normal;
+    
+  }
+
+* {
+    margin: 0;
+}
+.container {
+    width: 100%;
+    
+   
+}
+.smollicons {
+    width: 15px;
+    height: 15px;
+    
+}
+simbols{
+    font-family: simbols;
+}
+
+header {
+   width: 100%;
+   height: 200px;
+   text-align: center;
+   background-image: url(./img/paven.png) ;
+   background-repeat: repeat;
+
+    
+}
+
+section {
+   background-image: url(./img/paven.png) ;
+   background-repeat: repeat;
+   width: 100%;
+   display: flex;
+}
+.sticker {
+    background-image: url(./img/scotch.png);
+    background-repeat: no-repeat;
+    width: max-content;
+    width: 35px;
+    height: 50px;
+    position: absolute;
+    margin-top: -19px;
+    margin-left: 50%;
+}
+.sticker1 {
+    background-image: url(./img/scotch.png);
+    background-repeat: no-repeat;
+    width: max-content;
+    width: 35px;
+    height: 50px;
+    position: absolute;
+    margin-top: -19px;
+    margin-left: 5%;
+}
+
+
+
+
+aside {
+    width: 170px;
+    margin-left: 8%;
+    margin-top: 2%;
+    
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0px 2px 2px #ccc;
+}
+
+.login {
+    padding: 9px;
+    display: block;
+    text-align: center;
+    border-bottom: 2px dashed #ccc;
+    
+    
+} 
+.login button{
+    background-color:rgb(113, 176, 83) ;
+    text-align: center;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    color: white;
+    width: 40%;
+    margin-top: 5px;
+    font-size: 11px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    box-shadow: 0.6px 0.6px 1px #416f44 inset;
+    cursor: pointer;
+    
+}
+
+.login button:hover{
+    
+    box-shadow: 0px 0px 3px #416f44 inset;
+      
+}
+
+.login button:active{
+    
+    box-shadow: 0px 0px 3px grey inset;
+      
+}
+
+.login label {
+    text-align: center;
+    color: black;
+    font-size: 16px;
+    
+    /* margin-top: 5px; */
+}
+.login input{
+    /* margin-top: 5px; */
+    text-align: center;
+    width: 90%;
+    margin-left: 2%;
+    margin-right: 2%;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 2px #ccc inset;
+    outline: none;
+}
+
+input:focus{
+        border: 1px solid #70b231 ;
+}
+.login > h2  {
+    background-color: #cccccc43;
+    border-top:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+    font-weight: lighter;
+    margin-top: 5px;
+    font-family: fjallaone;
+    font-size: medium;
+    text-shadow:  1px 1px -0px rgba(0, 0, 0, 0.293);
+    padding: 3px ;
+    text-align: center;
+    
+}
+.link-green {
+    display: block;
+    color: rgb(113, 176, 83) ;
+    text-align: left;
+    font-size: 12px;
+    font-family: fjallaone;
+    font-weight: lighter;
+    margin-top: 7px;
+
+}
+.link-green span {
+    display: block;
+    margin-top: 4px;
+    letter-spacing: 0.8px;
+}
+header img {
+    width: 110px;
+    height: 110px;
+    margin-top: 10px;
+   
+   
+    
+    
+}
+header h1 {
+    color:rgb(113, 176, 83);
+    text-shadow:  0px 2px 1px #333;
+    font-family: nevis;
+    letter-spacing: 5px; 
+}
+
+header h1:hover{
+    text-shadow:  0px 2px 1px #333, 0px 0px 4px #70b231 ;
+    transition: all 300ms; 
+}
+
+nav {
+    background-color: #333;
+    width: 100%;
+   
+    line-height: 40px;
+    text-align: center;
+} 
+
+nav > ul {
+    
+    display: inline-flex;
+    flex-wrap: wrap;
+    
+}
+nav > ul> li{
+    height: 40px;
+    border-right: 1px solid grey; 
+    list-style: none;
+    
+}
+
+/* coloca la primera raya a la iz del nav */
+
+nav > ul > li:first-child{
+    border-left: 1px solid grey; 
+}
+
+nav> ul > li > a {
+    text-decoration: none;
+    padding: 10px;
+    padding: 10px 20px 10px 20px;
+    color: #ccc;
+}
+
+
+
+nav > ul > li:hover {
+    background-color:rgb(113, 176, 83); 
+    box-shadow: 0px 0px 4px rgb(113, 176, 83) inset;
+}
+nav > ul > li > ul {
+    display: none;
+    text-align: center;
+    background-color: #eee;
+    list-style: none;
+    padding: 0;
+    width: 160px;
+    box-shadow: 0px 2px 1px grey;
+}
+nav > ul > li > ul li {
+    /* background-color: #333; */
+    text-align: left;
+    padding-left: 10px; 
+    margin: 0;
+    border: 1px solid #ccc;
+    
+}
+nav > ul > li > ul li a {
+    text-decoration: none;
+    color: #828181;
+}
+
+nav > ul >li:hover > ul {
+    display: block;
+    position: absolute;
+    text-align: left;
+    z-index: 1;
+} 
+nav > ul >li:hover > ul > li:hover{ 
+    box-shadow: 0px 0px 6px #ccc inset;
+} 
+
+
+
+#principal {
+    width: 60%;
+    margin-left: 2%;
+    
+}
+.note {
+    margin-top: 4%;
+    background-color: white;
+    padding: 8px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 2px 2px #ccc;
+
+}
+
+
+.note > h2 {
+    font-family: fjallaone;
+    text-align: center;
+    
+    border-bottom: 1px solid #ccc;
+    color: rgba(0, 0, 0, 0.704);
+    margin: 5px ;
+    padding: 8px;
+}
+.note p {
+    margin: 12px;
+    justify-content: baseline;
+}
+#principal article span {
+    color: rgb(113, 176, 83);
+}
+
