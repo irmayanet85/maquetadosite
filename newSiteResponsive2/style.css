@@ -19,15 +19,17 @@ header{
     color: aliceblue;
     text-align: center;
     background-image: url(./img/banerblue.png);
-    background-position: -20px, -40px;
+    background-position: 100px, -40px;
     border: 10px solid white;
     line-height: 80px;
+    animation: move-moon 5s linear;
     
 } 
 header h1 {
     text-shadow: 0px 2px 1px black;
     font-family: 'Lato', sans-serif;
     font-weight: bold;
+    
 }
 
 nav {
@@ -96,6 +98,15 @@ nav {
 
     
 
+@keyframes move-moon {
+    from {
+        background-position: 0px, 0px;
+        
+    }
+    to {
+        background-position: 100px, -40px;
+    }
+}
 
 
 @keyframes rotate {
@@ -489,25 +500,3 @@ footer {
     padding: 10px;
 }
 
-
-@media (max-width: 890px){
-    .all {
-        width: 100%;
-    }
-    header {
-        margin-top: 0%;
-    }
-    
-}
-
-@media (max-width: 550px){
-    aside {
-        display: none;
-    }
-    main {
-        width: 90%;
-        margin: 0px auto;
-        text-align: justify;
-    }
-    
-}

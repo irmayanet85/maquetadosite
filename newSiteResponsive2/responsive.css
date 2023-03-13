@@ -1,0 +1,28 @@
+
+ @media (max-width: 1003px){
+    
+    .all {
+        width: 95%;
+
+    }
+    .all header h1{
+       font-size: 25px;
+      
+    }
+    header {
+        margin-top: 0%;
+    }
+    
+}
+
+@media (max-width: 550px){
+    aside {
+        display: none;
+    }
+    main {
+        width: 90%;
+        margin: 0px auto;
+        text-align: justify;
+    }
+    
+}  
